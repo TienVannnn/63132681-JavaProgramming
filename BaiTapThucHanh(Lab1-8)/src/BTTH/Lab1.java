@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Lab1 {
 
     public static void main(String[] args) {
-        //bai1();
-        bai2();
+    	Scanner s = new Scanner(System.in);
+        //bai1(s);
+        //bai2(s);
+    	bai3(s);
     }
 
     //  Bài 1
-    public static void bai1() {
-        Scanner s = new Scanner(System.in);
+    public static void bai1(Scanner s) {
         String hoTen;
         float dtb;
 
@@ -28,8 +29,7 @@ public class Lab1 {
     }
 
     // Bài 2
-    public static void bai2() {
-        Scanner s = new Scanner(System.in);
+    public static void bai2(Scanner s) {
         int chieuDai, chieuRong;
         System.out.print("Nhập chiều dài: ");
         chieuDai = s.nextInt();
@@ -50,4 +50,19 @@ public class Lab1 {
         System.out.printf("Cạnh nhỏ nhất: %d", canhMin);
         s.close();
     }
+    
+    // Bài 3
+    public static void bai3(Scanner s) {
+    	float canh;
+    	do {
+    		System.out.print("Nhập cạnh của khối lập phương ( cạnh > 0): ");
+        	canh = s.nextFloat();
+    	}while(canh <= 0);
+    	double theTich = Math.pow(canh, 3);
+    	System.out.print("Thể tích khối lập phương: " + theTich);
+    	
+    }
+    
+    // Bài 4
+    
 }
