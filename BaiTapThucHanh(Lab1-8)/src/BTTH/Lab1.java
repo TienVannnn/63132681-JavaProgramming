@@ -82,5 +82,4 @@ public class Lab1 {
     	else System.out.printf("Căn denta = %.2f", Math.sqrt(denTa));
     }
     
-    // bài 5
 }
