@@ -8,7 +8,8 @@ public class Lab1 {
     	Scanner s = new Scanner(System.in);
         //bai1(s);
         //bai2(s);
-    	bai3(s);
+    	//bai3(s);
+    	bai4(s);
     }
 
     //  Bài 1
@@ -64,5 +65,22 @@ public class Lab1 {
     }
     
     // Bài 4
+    public static void bai4(Scanner s) {
+    	System.out.print("Nhập vào 3 cạnh của phương trình bậc 2:\n");
+    	int a,b,c;
+    	System.out.print("Nhập a: ");
+    	a = s.nextInt();
+    	
+    	System.out.print("Nhập b: ");
+    	b = s.nextInt();
+    	
+    	System.out.print("Nhập c: ");
+    	c = s.nextInt();
+    	
+    	float denTa = b * b - 4 * a * c;
+    	if(denTa < 0) System.out.print("Chương trình vô nghiệm vì denTa < 0");
+    	else System.out.printf("Căn denta = %.2f", Math.sqrt(denTa));
+    }
     
+    // bài 5
 }
