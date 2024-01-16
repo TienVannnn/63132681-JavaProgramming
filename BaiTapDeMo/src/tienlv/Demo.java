@@ -1,6 +1,7 @@
 package tienlv;
 
 import java.util.Calendar;
+import java.util.Scanner;
 
 public class Demo {
 
@@ -26,6 +27,20 @@ public class Demo {
 		age = ca.get(Calendar.YEAR) - namSinh;
 		System.out.print(hoTen + " năm nay " + age + " tuổi");
 		System.out.printf("\n%s năm nay %d tuổi", hoTen, age);
+		
+		// nhập từ bàn phím
+		Scanner scanner = new Scanner(System.in);
+		String hoTen1;
+		int namSinh1;
+		System.out.print("\nNhập họ tên: ");
+		hoTen1 = scanner.nextLine();
+		System.out.print("Nhập năm sinh: ");
+		namSinh1 = scanner.nextInt();
+
+		System.out.printf("\n%s năm nay %d tuổi", hoTen1, namSinh1);
+		scanner.close();
+		
+		
 	}
 
 }
