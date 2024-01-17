@@ -66,7 +66,7 @@ public class Lab1 {
     
     // Bài 4
     public static void bai4(Scanner s) {
-    	System.out.print("Nhập vào 3 cạnh của phương trình bậc 2:\n");
+    	System.out.print("Nhập vào 3 tham số của phương trình bậc 2:\n");
     	int a,b,c;
     	System.out.print("Nhập a: ");
     	a = s.nextInt();
