@@ -91,7 +91,7 @@ public class Lab2 {
 		System.out.println("+------------------+");
 		do {
 			System.out.print("Bạn chọn: ");
-			choice = s.nextInt();
+			choice = s.nextInt();   
 			switch(choice) {
 			case 1:{
 				nhapbai1(s);
