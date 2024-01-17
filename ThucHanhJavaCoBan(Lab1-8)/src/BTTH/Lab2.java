@@ -6,9 +6,10 @@ public class Lab2 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		nhapbai1(s);
-		
+		//nhapbai1(s);
 		//bai2(s);
+		//bai3(s);
+		bai4(s);
 
 	}
 	
@@ -67,6 +68,52 @@ public class Lab2 {
 		
 	}
 	
+	// bài 3: Viết chương trình nhập vào số điện sử dụng của tháng và tính tiền điện theo
+	// phương pháp lũy tiến
+	public static void bai3(Scanner s) {
+		float soDien, tien;
+		System.out.print("Nhập số điện: ");
+		soDien = s.nextFloat();
+		if(soDien <= 50) tien = soDien * 1000;
+		else tien  = 50 * 1000 + (soDien - 50) * 1200;
+		System.out.printf("Tien dien = %.2f", tien);
+	}
+
 	
+	// bài 4:
+	public static void bai4(Scanner s) {
+		int choice;
+		System.out.println("+------------------+");
+		System.out.println("1. Giải phương trình bậc nhất");
+		System.out.println("2. Giải phương trình bậc 2");
+		System.out.println("3. Tính tiền điện");
+		System.out.println("4. Kết thúc");	
+		System.out.println("+------------------+");
+		do {
+			System.out.print("Bạn chọn: ");
+			choice = s.nextInt();
+			switch(choice) {
+			case 1:{
+				nhapbai1(s);
+				break;
+			}
+			case 2:{
+				bai2(s);
+				break;
+			}
+			case 3:{
+				bai3(s);
+				break;
+			}
+			case 4:{
+				System.out.print("Thoát chương trình!!!");
+				System.exit(0);
+			}
+			default: {
+				System.out.print("Nhập không hợp lệ, vui lòng nhập lại: \n");
+			}
+			}
+		}while(choice < 1 || choice > 4);
+	}
 
 }
