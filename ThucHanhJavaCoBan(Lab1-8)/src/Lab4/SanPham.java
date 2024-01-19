@@ -26,7 +26,6 @@ public class SanPham {
 		donGia = s.nextFloat();
 		System.out.print("Nhập mức giảm giá: ");
 		giamGia = s.nextFloat();
-		s.close();
 	}
 	
 	public float getThueNhapKhau() {
@@ -41,12 +40,29 @@ public class SanPham {
 		
 		
 	}
+}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		SanPham sa = new SanPham();
-		sa.nhap();
-		sa.xuat();
-	}
 
+// bài 2
+class DsSP {
+		SanPham ds[];
+		public void nhap() {
+			Scanner s = new Scanner(System.in);
+	        System.out.print("Nhập số lượng sản phẩm: ");
+	        int n = s.nextInt();
+	        ds = new SanPham[n];
+	        for (int i = 0; i < n; i++) {
+	            ds[i] = new SanPham();
+	            System.out.printf("\nNhập sản phẩm thứ %d\n", i + 1);
+	            ds[i].nhap();
+	        }
+	        s.close();
+		}
+		
+		public void xuat() {
+			System.out.println("Danh sách sản phẩm:");
+	        for (int i = 0; i < ds.length; i++) {
+	            ds[i].xuat();
+	        }
+		}
 }
