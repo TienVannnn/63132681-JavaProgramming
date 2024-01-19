@@ -4,18 +4,53 @@ import java.util.Scanner;
 
 // bài 1
 public class SanPham {
-	String tenSP;
-	float donGia, giamGia;
+	private String tenSP;
+	private float donGia, giamGia;
 	
+	
+	// bài 4
+	public String getTenSP() {
+		return tenSP;
+	}
+
+	public void setTenSP(String tenSP) {
+		this.tenSP = tenSP;
+	}
+
+	public float getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+
+	public float getGiamGia() {
+		return giamGia;
+	}
+
+	public void setGiamGia(float giamGia) {
+		this.giamGia = giamGia;
+	}
+
 	public SanPham() {
 		tenSP = "";
 		donGia = 0;
 		giamGia = 0;
 	}
+	
+	// bài 3
 	public SanPham(String tenSP, float donGia, float giamGia) {
 		this.tenSP = tenSP;
 		this.donGia = donGia;
 		this.giamGia = giamGia;
+	}
+	
+	public SanPham(String ten, float donGia) {
+//		this.tenSP = ten;
+//		this.donGia = donGia;
+//		giamGia = 0;
+		this(ten,donGia,0);
 	}
 
 	public void nhap() {
@@ -28,7 +63,7 @@ public class SanPham {
 		giamGia = s.nextFloat();
 	}
 	
-	public float getThueNhapKhau() {
+	private float getThueNhapKhau() {
 		return 0.1f * donGia;
 	}
 	
