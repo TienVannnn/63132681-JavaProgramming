@@ -1,4 +1,4 @@
-package BTTH;
+package Lab1_Lab2_Lab3;
 
 import java.util.Arrays;
 import java.util.Scanner;
