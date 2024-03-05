@@ -14,4 +14,4 @@
 <h1></h1>
 <h2>Game JavaSwing</h2>
 <p> + Game Tic Tac Toe</p>
-<a href="https://github.com/TienVannnn/63132681-JavaProgramming/tree/main/Game_JavaSwing">** Chi tiết tại đây ** </a>
+<a href="https://github.com/TienVannnn/63132681-JavaProgramming/tree/main/Game_JavaSwing" target="blank">** Chi tiết tại đây ** </a>
